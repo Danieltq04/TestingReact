@@ -10,6 +10,7 @@ const divRoot = document.querySelector("#root");
 
 
 //ReactDOM.render( <PrimeraApp saludo="{123}"/>,divRoot);
-ReactDOM.render( <CounterApp value={10}/>,divRoot);
+ReactDOM.render( <PrimeraApp saludo="Prueba Hola Mundo"/>,divRoot);
+//ReactDOM.render( <CounterApp value={10}/>,divRoot);
 
 
