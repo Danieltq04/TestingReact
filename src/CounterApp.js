@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 
 const CounterApp = ({value = 10})=>{
 
-    const [counter,setCounter] = useState(value)
+    const [counter,setCounter] = useState(value);
+    //los hooks no se testean, ya lo hizo react
 
     const handleAdd = ()=>{
         //setCounter((c)=>c+1);//No se usa ++ porque cambiaría la constante
