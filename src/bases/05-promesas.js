@@ -1,4 +1,4 @@
-import { getHeroeById } from './bases/08-imp-exp'
+import { getHeroeById } from "./04-imp-exp";
 
 // const promesa = new Promise( (resolve, reject) => {
 
@@ -17,7 +17,7 @@ import { getHeroeById } from './bases/08-imp-exp'
 // })
 // .catch( err => console.warn( err ) );
 
-const getHeroeByIdAsync = ( id ) => {
+export const getHeroeByIdAsync = ( id ) => {
 
     return new Promise( (resolve, reject) => {
         // resolve llama cuando termina a todos los que escuchan
@@ -31,16 +31,17 @@ const getHeroeByIdAsync = ( id ) => {
             } else {
                 reject( 'No se pudo encontrar el héroe' );
             }
-        }, 2000 )
+        }, 1500 )
     
     });
 
 
 }
 
-
+/*
 getHeroeByIdAsync(1)
     .then( console.log )
     // o ( heroe => console.log("Heroe",heroe) );
     .catch( console.warn );
     // o ( heroe => console.warn(err) );
+    */

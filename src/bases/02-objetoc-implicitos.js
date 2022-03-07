@@ -12,7 +12,7 @@ export const getUser = () =>({
 //Paréntesis para que no se confunda las llaves con el inicio de la función
 
 
-const getUserActive = (name) =>({
+export const getUserActive = (name) =>({
     uid: "1234",
     username: name
 })
